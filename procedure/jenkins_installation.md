@@ -97,3 +97,13 @@ https://www.vultr.com/docs/install-sonarqube-on-ubuntu-20-04-lts
 Ngininx
 
 https://serverfault.com/questions/424452/nginx-enable-site-command
+
+
+
+https://dev.to/errietta/making-jenkins-and-github-actually-integrate-with-each-other-4kgk
+
+
+https://medium.com/@developerwakeling/setting-up-github-webhooks-jenkins-and-ngrok-for-local-development-f4b2c1ab5b6
+
+https://devops4solutions.medium.com/jenkins-setup-for-php-unit-testing-on-aws-c39baad7a99e
+

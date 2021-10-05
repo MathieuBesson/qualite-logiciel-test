@@ -1,7 +1,7 @@
 #  Qualité logiciel & tests
 ## Introduction
 
-Ce projet a été créer dan le cadre de notre formation à MDS (MyDigitalSchool Rennes), plus particulièrement dans le cours de **Qualité logiciel & tests**.
+Ce projet a été créer dans le cadre de notre formation à MDS (MyDigitalSchool Rennes), plus particulièrement dans le cours de **Qualité logiciel & tests**.
 
 ## Objectifs 
 ### Objectif 1
