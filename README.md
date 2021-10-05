@@ -4,7 +4,7 @@
 Ce projet a été créer dans le cadre de notre formation à MDS (MyDigitalSchool Rennes), plus particulièrement dans le cours de **Qualité logiciel & tests**.
 
 ## Objectifs 
-### Objectif 1
+### Objectif 1 : Pipeline d'integration continue 
 L'objectif est de créer une pipeline d'intégration continue (CI/CD) à l'aide de :
 
 - [Jenkins](https://www.jenkins.io/) permettant le lancement d'une série d'instructions visant au contrôle du code source livré par l'équipe de développement (automatisation des tests unitaire)
@@ -12,7 +12,7 @@ L'objectif est de créer une pipeline d'intégration continue (CI/CD) à l'aide 
 - [Github](https://github.com) plateforme en ligne permettant l'hébergement et le versionning du code source produit
 
 
-### Objectif 2
+### Objectif 2 : Création d'un mini site web (connexion) et des test associés  
 Lié au première objectif le deuxième est de créer un site web simple contenant : 
 
 - Une page de connexion contenant
@@ -29,7 +29,13 @@ Lié au première objectif le deuxième est de créer un site web simple contena
 
 L'objectif principal final étant qu'à chaque commit sur le dépôt Github d'un des membres de l'équipe de développement Jenkins déclenche le lancement des tests ainsi que le contrôle de qualité de code par SonarQube.
 
+### Procédure de mise en place de l'environnement de test 
+Les fichiers de procédure sont à retrouver dans le dossier /procedures
+- **#1** Procédure d'installation de Jenkins -> jenkins_installation.md
+- **#2** Accèder à Jenkins sur une VM depuis une machine hôte -> jenkins_acces_depuis_VM
+- **#3** Configuration de Jenkins pour le lancement de test automatisés -> jenkins_configuration
+
 ### Les contributeurs 
 
-- [Mathieu Besson](https://github.com/MathieuBesson/) B3 Développement Web MDS
 - [Malo Gerard](https://github.com/MaloGerardMDS) B3 Développement Web MDS
+- [Mathieu Besson](https://github.com/MathieuBesson/) B3 Développement Web MDS
