@@ -35,6 +35,9 @@ Les fichiers de procédure sont à retrouver dans le dossier /procedures
 - **#2** Accèder à Jenkins sur une VM depuis une machine hôte -> jenkins_acces_depuis_VM
 - **#3** Configuration de Jenkins pour le lancement de test automatisés -> jenkins_configuration
 
+
+NB : Il est possible de visualiser les images en ouvrant le dossier avec l'éditeur de Markdown Obsidian (avec le plugin comunautaire -> Ozan's Image in Editor Plugin)
+
 ### Les contributeurs 
 
 - [Malo Gerard](https://github.com/MaloGerardMDS) B3 Développement Web MDS
