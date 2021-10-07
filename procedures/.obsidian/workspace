@@ -4,14 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b90c658fa10e216a",
+        "id": "81e49c3bb38a95f1",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "liens_ressources.md",
-            "mode": "preview"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -68,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "liens_ressources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,12 +82,12 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b90c658fa10e216a",
+  "active": "81e49c3bb38a95f1",
   "lastOpenFiles": [
+    "jenkins_acces_depuis_VM.md",
     "liens_ressources.md",
     "jenkins_installation.md",
     "jenkins_configuration.md",
-    "jenkins_acces_depuis_VM.md",
     "installations_mineurs.md",
     "procedures/liens_ressources.md",
     "procedures/jenkins_acces_depuis_VM.md",
