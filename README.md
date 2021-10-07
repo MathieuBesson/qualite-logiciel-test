@@ -35,7 +35,8 @@ L'objectif principal final étant qu'à chaque commit sur le dépôt Github d'un
 
 2 moyens sont possible pour cette mise en place :
 
-1 - L'installation de chaque logicielle en ligne de commande
+#### 1 - L'installation de chaque logicielle en ligne de commande
+
 Les fichiers de procédure sont à retrouver dans le dossier /procedures
 
 - **#1** Installation des logicielles utilisés php, git, composer, mariadb... -> installations_mineurs
@@ -43,7 +44,7 @@ Les fichiers de procédure sont à retrouver dans le dossier /procedures
 - **#3** Accèder à Jenkins sur une VM depuis une machine hôte -> jenkins_acces_depuis_VM
 - **#4** Configuration de Jenkins pour le lancement de test automatisés -> jenkins_configuration
 
-2 - L'utilisation d'un provider de VM ici [Vagrant](https://www.vagrantup.com) permettant le lancement de scripts d'installation automatique
+#### 2 - L'utilisation d'un provider de VM ici [Vagrant](https://www.vagrantup.com) permettant le lancement de scripts d'installation automatique
 
 - **#1** Après l'[installation de Vagrant](https://www.vagrantup.com/downloads)
 
