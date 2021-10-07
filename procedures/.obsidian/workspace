@@ -7,8 +7,11 @@
         "id": "81e49c3bb38a95f1",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "installations_mineurs.md",
+            "mode": "preview"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "installations_mineurs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,15 +88,15 @@
   },
   "active": "81e49c3bb38a95f1",
   "lastOpenFiles": [
-    "jenkins_acces_depuis_VM.md",
-    "liens_ressources.md",
+    "installations_mineurs.md",
     "jenkins_installation.md",
     "jenkins_configuration.md",
-    "installations_mineurs.md",
-    "procedures/liens_ressources.md",
-    "procedures/jenkins_acces_depuis_VM.md",
-    "procedures/jenkins_installation.md",
-    "procedures/installations_mineurs.md",
-    "README.md"
+    "jenkins_acces_depuis_VM.md",
+    "images/reverse-proxy.png",
+    "images/virtualbox-binding-ports.png",
+    "images/socketXP-authentification.png",
+    "images/jenkins-configuration.png",
+    "images/github-ssh-key.png",
+    "liens_ressources.md"
   ]
 }
