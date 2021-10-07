@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "4a99559fc206bae5",
+    "type": "split",
+    "children": [
+      {
+        "id": "b90c658fa10e216a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "liens_ressources.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "78378cc14560e6b8",
+    "type": "split",
+    "children": [
+      {
+        "id": "2979b5346cd329b9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "238bee424d48dedd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "b417ed4d983073d4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 302
+  },
+  "right": {
+    "id": "73e0e5446c9559a5",
+    "type": "split",
+    "children": [
+      {
+        "id": "7b4e0103d44cb805",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4db9d0b4386c0d09",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "liens_ressources.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b90c658fa10e216a",
+  "lastOpenFiles": [
+    "liens_ressources.md",
+    "jenkins_installation.md",
+    "jenkins_configuration.md",
+    "jenkins_acces_depuis_VM.md",
+    "installations_mineurs.md",
+    "procedures/liens_ressources.md",
+    "procedures/jenkins_acces_depuis_VM.md",
+    "procedures/jenkins_installation.md",
+    "procedures/installations_mineurs.md",
+    "README.md"
+  ]
+}

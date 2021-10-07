@@ -12,6 +12,10 @@
 - https://medium.com/@developerwakeling/setting-up-github-webhooks-jenkins-and-ngrok-for-local-development-f4b2c1ab5b6
 
 
+https://www.youtube.com/watch?v=TiVIb0KRIZw
+https://www.devopsschool.com/blog/how-to-integrate-sonarqube-with-jenkins-as-part-of-ci-cd/
+
+
 ## SonarQube : 
 
 - https://directdevops.blog/2021/07/30/installing-sonarqube-8-9-lts-on-ubuntu/
