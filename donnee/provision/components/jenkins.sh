@@ -30,8 +30,8 @@ echo 'Entrer le mot de passe suivant ici http://your_server_ip_or_domain:8080'
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 # Génération d'un clé ssh entre jenkins et le service d'hébergement du code versionné 
-sudo -su jenkins
-ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa
+# sudo -su jenkins
+# ssh-keygen -t rsa -N "" -f ~/.ssh/id_rsa
 
-echo 'Voici la clé publique à insérer sur votre service hébergement du code' 
-cat ~/.ssh/id_rsa.pub
+# echo 'Voici la clé publique à insérer sur votre service hébergement du code' 
+# cat ~/.ssh/id_rsa.pub

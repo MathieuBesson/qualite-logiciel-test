@@ -56,7 +56,7 @@ vagrant up
 - **#2** Suivre la procédure d'accès à Jenkins sur une VM depuis une machine hôte -> jenkins_acces_depuis_VM
 - **#3** Configuration de Jenkins pour le lancement de test automatisés -> jenkins_configuration
 
-NB : Il est possible de visualiser les images en ouvrant le dossier avec l'éditeur de Markdown Obsidian (avec le plugin comunautaire -> Ozan's Image in Editor Plugin)
+NB : Il est possible de visualiser les images en ouvrant le dossier avec l'éditeur de Markdown [Obsidian](https://obsidian.md/) (avec le plugin comunautaire -> Ozan's Image in Editor Plugin)
 
 ### Les contributeurs
 
