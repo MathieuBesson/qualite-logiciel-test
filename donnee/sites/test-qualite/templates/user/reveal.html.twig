@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Authentification{% endblock %}
+
+{% block body %}
+    {% for message in app.flashes('success') %}
+         <div class="alert-success">
+             {{ message }}
+         </div>
+    {% endfor %}
+    <main class="authentification">
+        <h1 class="authentification__title">Qualité logiciel & tests : Hello <span class="important">{{ username }}</span> ! </h1>
+            <p class="authentification__content">Bienvenue dans votre espace privée</p>
+        </section>
+    </main>
+
+{% endblock %}

@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "installations_mineurs.md",
-            "mode": "preview"
+            "file": "Symfony.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "installations_mineurs.md",
+                "file": "Symfony.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,7 @@
   },
   "active": "81e49c3bb38a95f1",
   "lastOpenFiles": [
+    "Untitled.md",
     "installations_mineurs.md",
     "jenkins_installation.md",
     "jenkins_configuration.md",
@@ -96,7 +97,6 @@
     "images/virtualbox-binding-ports.png",
     "images/socketXP-authentification.png",
     "images/jenkins-configuration.png",
-    "images/github-ssh-key.png",
-    "liens_ressources.md"
+    "images/github-ssh-key.png"
   ]
 }
