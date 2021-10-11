@@ -12,7 +12,7 @@ class UserFixtures extends Fixture
     {
         $user = new User();
         $user->setUsername('admin');
-        $user->setPassword(hash('md5', 'admin'));
+        $user->setPassword(hash('md5', 'Azerty123#'));
 
         $manager->persist($user);
 

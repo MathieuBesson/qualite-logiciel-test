@@ -2,11 +2,10 @@
 
 ## Reste à faire
 
-- Configuration de enkiins pour le lancement des tests unitaires
+- Configuration de Jenkins pour le lancement des tests unitaires
 - Installation et configuration de SonarQube
 - Vérification du mot de passe en js (nombre de caractères, caractères spéciaux...)
 - Tests unitaires PhpUnit
-- Vérification du mot de passe à la connexion
 
 ## Jenkins :
 

@@ -3,26 +3,30 @@
 {% block title %}Authentification{% endblock %}
 
 {% block body %}
-    {% for message in app.flashes('error') %}
-         <div class="alert-error">
-             {{ message }}
-         </div>
-    {% endfor %}
-    <main class="authentification">
-        <h1 class="authentification__title">Qualité logiciel & tests : Authentification</h1>
-        <section class="authentification__form">
-            {{ form_start(form) }}
-            <div class="authentification__form-username">
-                {{ form_label(form.username, null, { 'label_attr': {'class': 'authentification__form-username-label'} }) }}
-                {{ form_widget(form.username, { 'attr': {'class': 'authentification__form-username-input'} }) }}
-            </div>
-            <div class="authentification__form-password">
-                {{ form_label(form.password, null, { 'label_attr': {'class': 'authentification__form-password-label'} }) }}
-                {{ form_widget(form.password, { 'attr': {'class': 'authentification__form-password-input'} }) }}
-            </div>
-            <input type="submit" value="Connexion" class="authentification__form-btn">
-            {{ form_rest(form) }}
-        </section>
-    </main>
+	{% for message in app.flashes('error') %}
+		<div class="alert-error">
+			{{ message }}
+		</div>
+	{% endfor %}
+	<main class="authentification">
+		<h1 class="authentification__title">Qualité logiciel & tests : Authentification</h1>
+		<section class="authentification__form">
+			{{ form_start(form) }}
+			<div class="authentification__form-username" id="username-group">
+				{{ form_label(form.username, null, { 'label_attr': {'class': 'authentification__form-username-label'} }) }}
+				{{ form_widget(form.username, { 'attr': {'class': 'authentification__form-username-input'}, 'id': 'username' }) }}
+			</div>
+			<div class="authentification__form-password" id="password-group">
+				{{ form_label(form.password, null, { 'label_attr': {'class': 'authentification__form-password-label'} }) }}
+				{{ form_widget(form.password, { 'attr': {'class': 'authentification__form-password-input'}, 'id': 'password' }) }}
+			</div>
+			<input type="submit" value="Connexion" class="authentification__form-btn" id="authentification-btn" disabled>
+			{{ form_rest(form) }}
+		</section>
+	</main>
 
+{% endblock %}
+
+{% block javascripts %}
+	<script src="{{ asset('assets/checkingInput.js') }}"></script>
 {% endblock %}

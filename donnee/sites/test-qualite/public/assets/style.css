@@ -38,7 +38,7 @@
 .authentification__form-username, .authentification__form-password{
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin: 15px;
     width: 25%;
 }
 .authentification__form-username-label, .authentification__form-password-label{
@@ -55,6 +55,11 @@
     color: #090925;
     font-size: 17px;
     font-weight: bold;
+    outline: none;
+}
+
+.authentification__form-password-input.error, .authentification__form-username-input.error{
+    border-color: #B0413E;
 }
 
 .authentification__form-btn{
@@ -65,6 +70,11 @@
     font-size: 18px;
     border-radius: 10px;
     margin-top: 25px;
+    border: 0;
+}
+
+.authentification__form-btn:disabled {
+    background-color: #9595fc;
 }
 
 .alert-error, .alert-success{
@@ -86,4 +96,10 @@
 
 .alert-success{
     background-color: #469f2c;
+}
+
+.error-username, .error-password {
+    color: #B0413E;
+    font-size: 16px;
+    margin: 15px 0px 0px 0px;
 }
