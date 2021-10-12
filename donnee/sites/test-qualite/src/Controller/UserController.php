@@ -26,7 +26,7 @@ class UserController extends AbstractController
             ->getForm();
 
         $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid()) {
+        if ($form->isSubmitted() && $form->isValid()) { 
 
             // TODO : Vérifier le nombre de caractères du mot de passe + l'integrité des deux champs
             // Class utilitaire vérification
