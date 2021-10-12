@@ -2,7 +2,7 @@
 
 
 
-## Installation de [Sonarqube](https://techexpert.tips/fr/sonarqube/sonarqube-installation-sur-ubuntu-linux/) sous Ubuntu 
+## Installation de [Sonarqube](https://docs.sonarqube.org/latest/) sous Ubuntu 
 
 - Mise a jour des paquets :
 ```shell
