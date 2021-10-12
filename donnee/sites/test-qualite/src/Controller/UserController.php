@@ -11,6 +11,8 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Validator\Constraints\Length;
+use Symfony\Component\Validator\Constraints\NotBlank;
 
 class UserController extends AbstractController
 {
@@ -27,34 +29,44 @@ class UserController extends AbstractController
             ->getForm();
 
         $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid()) { 
+        if ($form->isSubmitted() && $form->isValid()) {
 
             // TODO : Vérifier le nombre de caractères du mot de passe + l'integrité des deux champs
             // Class utilitaire vérification
             // Class utilitaire de génération de mot de passe
-
-            $checkAuthentication->checkUsernameValidity();
-
             $user = $form->getData();
+            $errorUsername = $checkAuthentication->checkUsernameValidity($user->getUsername());
+            $errorPassword = $checkAuthentication->checkPasswordValidity($user->getPassword());
 
-            $userFound = $this->getDoctrine()
-                ->getRepository(User::class)
-                ->findOneBy([
-                    'username' => $user->getUserName(),
-                    'password' => hash('md5', $user->getPassword()),
-                ]);
+            if($errorUsername && $errorPassword){
+                $userFound = $this->getDoctrine()
+                    ->getRepository(User::class)
+                    ->findOneBy([
+                        'username' => $user->getUsername(),
+                        'password' => hash('sha256', $user->getPassword()),
+                    ]);
 
-            if ($userFound === null) {
-                $this->addFlash('error', 'Mot de passe incorrect');
-                return $this->redirectToRoute('authentication');
+                if ($userFound === null) {
+                    $this->addFlash('error', 'Mot de passe incorrect');
+                    return $this->redirectToRoute('authentication');
+                } else {
+
+                    $session->set('username', $userFound->getUsername());
+                    $session->set('state', 'connected');
+
+                    $this->addFlash('success', 'Authentification réussite !');
+                    return $this->redirectToRoute('reveal');
+                }
             } else {
-
-                $session->set('username', $userFound->getUsername());
-                $session->set('state', 'connected');
-
-                $this->addFlash('success', 'Authentification réussite !');
-                return $this->redirectToRoute('reveal');
+                return $this->render('user/index.html.twig', [
+                    'form' => $form->createView(),
+                    'errors' => [
+                        'username' => !$errorUsername,
+                        'password' => !$errorPassword
+                    ]
+                ]);
             }
+
         }
 
         return $this->render('user/index.html.twig', [

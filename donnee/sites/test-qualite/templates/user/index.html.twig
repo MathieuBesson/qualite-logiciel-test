@@ -15,10 +15,21 @@
 			<div class="authentification__form-username" id="username-group">
 				{{ form_label(form.username, null, { 'label_attr': {'class': 'authentification__form-username-label'} }) }}
 				{{ form_widget(form.username, { 'attr': {'class': 'authentification__form-username-input'}, 'id': 'username' }) }}
+
+				{% if errors.username %}
+					<p id="error-username" class="error-username">
+						Votre nom d'utilisateur doit comprendre entre en 3 et 150 caractères
+					</p>
+				{% endif %}
 			</div>
 			<div class="authentification__form-password" id="password-group">
 				{{ form_label(form.password, null, { 'label_attr': {'class': 'authentification__form-password-label'} }) }}
 				{{ form_widget(form.password, { 'attr': {'class': 'authentification__form-password-input'}, 'id': 'password' }) }}
+				{% if errors.password %}
+					<p id="error-password" class="error-password">
+						Votre mot de passe doit faire minimum 6 characters, une minuscule, une majuscule, un nombre et un caractère special
+					</p>
+				{% endif %}
 			</div>
 			<input type="submit" value="Connexion" class="authentification__form-btn" id="authentification-btn" disabled>
 			{{ form_rest(form) }}

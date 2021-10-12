@@ -4,9 +4,9 @@ namespace App\Service;
 
 class CheckAuthentication
 {
-    public function checkPasswordValidity(): string
+    public function checkPasswordValidity($password): string
     {
-        return 1;
+        return preg_match("/^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{6,}$/", $password) === 1;
     }
 
     public function checkUsernameValidity($username): string
