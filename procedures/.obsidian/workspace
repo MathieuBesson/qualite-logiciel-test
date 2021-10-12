@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "installation/jenkins_installation.md",
-            "mode": "preview"
+            "file": "liens_ressources.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "installation/jenkins_installation.md",
+                "file": "liens_ressources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,8 +88,8 @@
   },
   "active": "81e49c3bb38a95f1",
   "lastOpenFiles": [
-    "installation/jenkins_installation.md",
     "liens_ressources.md",
+    "installation/jenkins_installation.md",
     "configuration/jenkins_acces_depuis_VM.md",
     "installation/projet_symfony_installation.md",
     "installation/installations_mineurs.md",

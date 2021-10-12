@@ -11,8 +11,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Validator\Constraints\Length;
-use Symfony\Component\Validator\Constraints\NotBlank;
 
 class UserController extends AbstractController
 {
@@ -31,13 +29,12 @@ class UserController extends AbstractController
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
 
-            // TODO : Vérifier le nombre de caractères du mot de passe + l'integrité des deux champs
-            // Class utilitaire vérification
-            // Class utilitaire de génération de mot de passe
+            // Get data from form
             $user = $form->getData();
             $errorUsername = $checkAuthentication->checkUsernameValidity($user->getUsername());
             $errorPassword = $checkAuthentication->checkPasswordValidity($user->getPassword());
 
+            // Check error on username and password
             if($errorUsername && $errorPassword){
                 $userFound = $this->getDoctrine()
                     ->getRepository(User::class)
@@ -46,11 +43,11 @@ class UserController extends AbstractController
                         'password' => hash('sha256', $user->getPassword()),
                     ]);
 
+                // Connexion or reject
                 if ($userFound === null) {
                     $this->addFlash('error', 'Mot de passe incorrect');
                     return $this->redirectToRoute('authentication');
                 } else {
-
                     $session->set('username', $userFound->getUsername());
                     $session->set('state', 'connected');
 
@@ -73,7 +70,6 @@ class UserController extends AbstractController
             'form' => $form->createView(),
         ]);
     }
-
 
     /**
      * @Route("/reveal", name="reveal")

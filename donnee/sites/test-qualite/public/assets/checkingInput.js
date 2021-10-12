@@ -68,10 +68,6 @@ class AuthentificationControleField {
         parentElement.querySelector('#error-' + errorId)?.parentNode.removeChild(parentElement.querySelector('#error-' + errorId));
     }
 
-    checkField(){
-
-    }
-
     checkUsername(username) {
         return (typeof username === 'string') && username.length >= 3 && username.length <= 150;
     }
@@ -90,7 +86,6 @@ class AuthentificationControleField {
         return frag;
     }
 }
-
 
 let authentificationControleField = new AuthentificationControleField(
     document.querySelector('#username-group'),
