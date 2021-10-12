@@ -11,7 +11,7 @@ class CheckAuthenticationTest extends TestCase
     public function test_check_username_validity_is_string()
     {
         $checkAuthentication = new CheckAuthentication();
-        $this->assertEquals(true, $checkAuthentication->checkUsernameValidity('a'));
+        $this->assertEquals(true, $checkAuthentication->checkUsernameValidity('admin'));
     }
 
     public function test_check_username_validity_not_string()
