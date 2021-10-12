@@ -240,3 +240,6 @@ sudo mariadb
 ```sql
 GRANT ALL ON *.* TO 'admin'@'localhost' IDENTIFIED BY 'admin' WITH GRANT OPTION;
 ```
+
+
+## Installer PHPUnit

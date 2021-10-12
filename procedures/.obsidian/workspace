@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "liens_ressources.md",
+            "file": "installation/installations_mineurs.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "liens_ressources.md",
+                "file": "installation/installations_mineurs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,8 +88,8 @@
   },
   "active": "81e49c3bb38a95f1",
   "lastOpenFiles": [
-    "liens_ressources.md",
     "installation/installations_mineurs.md",
+    "liens_ressources.md",
     "installation/projet_symfony_installation.md",
     "installation/jenkins_installation.md",
     "Untitled.md",

@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\User;
+use App\Service\CheckAuthentication;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -16,7 +17,7 @@ class UserController extends AbstractController
     /**
      * @Route("/", name="authentication")
      */
-    public function authentication(Request $request, Session $session): Response
+    public function authentication(Request $request, Session $session, CheckAuthentication $checkAuthentication): Response
     {
         $user = new User();
 
@@ -31,6 +32,8 @@ class UserController extends AbstractController
             // TODO : Vérifier le nombre de caractères du mot de passe + l'integrité des deux champs
             // Class utilitaire vérification
             // Class utilitaire de génération de mot de passe
+
+            $checkAuthentication->checkUsernameValidity();
 
             $user = $form->getData();
 
