@@ -7,8 +7,11 @@
         "id": "81e49c3bb38a95f1",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "liens_ressources.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "liens_ressources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,15 +88,15 @@
   },
   "active": "81e49c3bb38a95f1",
   "lastOpenFiles": [
+    "liens_ressources.md",
+    "installation/installations_mineurs.md",
+    "installation/projet_symfony_installation.md",
+    "installation/jenkins_installation.md",
     "Untitled.md",
     "installations_mineurs.md",
     "jenkins_installation.md",
     "jenkins_configuration.md",
     "jenkins_acces_depuis_VM.md",
-    "images/reverse-proxy.png",
-    "images/virtualbox-binding-ports.png",
-    "images/socketXP-authentification.png",
-    "images/jenkins-configuration.png",
-    "images/github-ssh-key.png"
+    "images/reverse-proxy.png"
   ]
 }
