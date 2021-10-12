@@ -34,4 +34,24 @@ class CheckAuthenticationTest extends TestCase
         $checkAuthentication = new CheckAuthentication();
         $this->assertEquals(false, $checkAuthentication->checkUsernameValidity('Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec qu'));
     }
+
+
+    public function test_check_password_validity_is_incorrect_string()
+    {
+        $checkAuthentication = new CheckAuthentication();
+
+        $notCorrectPasswords = ['azerty', [], 555, 'Azerty123.', '**###'];
+        foreach ($notCorrectPasswords as $notCorrectPassword) {
+            $this->assertEquals(false, $checkAuthentication->checkPasswordValidity($notCorrectPassword));
+        }
+    }
+
+    public function test_check_password_validity_is_correct_string()
+    {
+        $checkAuthentication = new CheckAuthentication();
+        $notCorrectPasswords = ['Azerty123#', '1223Pc^%', 'Azerty123.@', '*Poayh856$'];
+        foreach ($notCorrectPasswords as $notCorrectPassword) {
+            $this->assertEquals(true, $checkAuthentication->checkPasswordValidity($notCorrectPassword));
+        }
+    }
 }

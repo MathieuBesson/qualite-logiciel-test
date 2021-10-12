@@ -6,7 +6,7 @@ class CheckAuthentication
 {
     public function checkPasswordValidity($password): string
     {
-        return preg_match("/^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{6,}$/", $password) === 1;
+        return is_string($password) && preg_match("/^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{6,}$/", $password) === 1;
     }
 
     public function checkUsernameValidity($username): string

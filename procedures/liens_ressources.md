@@ -2,7 +2,6 @@
 
 ## Reste à faire
 
-- Procédure configuration de Jenkins pour le lancement des tests unitaires
 - Procédure configuration de SonarQube pour le lancement du contrôle du test 
 - Installation et configuration de SonarQube
 - Rédiger les test de vérification du mot de passe 

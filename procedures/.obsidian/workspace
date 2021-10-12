@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "liens_ressources.md",
+            "file": "configuration/jenkins_configuration.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "liens_ressources.md",
+                "file": "configuration/jenkins_configuration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "81e49c3bb38a95f1",
   "lastOpenFiles": [
+    "configuration/jenkins_configuration.md",
+    "configuration/jenkins_acces_depuis_VM.md",
     "liens_ressources.md",
     "installation/jenkins_installation.md",
-    "configuration/jenkins_acces_depuis_VM.md",
     "installation/projet_symfony_installation.md",
     "installation/installations_mineurs.md",
     "Untitled.md",
     "installations_mineurs.md",
     "jenkins_installation.md",
-    "jenkins_configuration.md",
-    "jenkins_acces_depuis_VM.md"
+    "jenkins_configuration.md"
   ]
 }
