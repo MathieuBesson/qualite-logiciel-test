@@ -21,7 +21,7 @@ $CMD "CREATE DATABASE IF NOT EXISTS $DBNAME"
 $CMD "GRANT ALL PRIVILEGES ON $DBNAME.* TO '$DBUSER'@'%' IDENTIFIED BY '$DBPASSWD';"
 $CMD "FLUSH PRIVILEGES;"
 
-sudo sed -i "s/.*bind-address.*/bind-address = 0.0.0.0/" /etc/mysql/mysql.conf.d/mysqld.cnf
+#sudo sed -i "s/.*bind-address.*/bind-address = 0.0.0.0/" /etc/mysql/mysql.conf.d/mysqld.cnf
 
 sudo service mysql restart
 

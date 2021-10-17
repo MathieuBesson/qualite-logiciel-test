@@ -1,5 +1,5 @@
 # Configuration de Jenkins pour le lancement de test automatisés 
-- Retourner sur Jenkins [192.168.88.188:8080](192.168.88.188:8080) :
+- Retourner sur Jenkins [127.0.0.1:8081](127.0.0.1:8081) :
 ```
 Nouvelle item -> Saisissez un nom -> Construire un projet free-style 
 ```

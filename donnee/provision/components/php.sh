@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo service apache2 stop
 
 sudo apt-get install software-properties-common
 sudo apt-get update

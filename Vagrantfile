@@ -18,6 +18,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, path: "donnee/provision/components/composer.sh"
   config.vm.provision :shell, path: "donnee/provision/components/git.sh"
   config.vm.provision :shell, path: "donnee/provision/components/jenkins.sh"
+  # config.vm.provision :shell, path: "donnee/provision/components/sonarqube.sh"
   
   config.vm.provision :shell, inline: "echo 'cd /var/www' >> /home/vagrant/.profile"
 

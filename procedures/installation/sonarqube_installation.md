@@ -11,12 +11,12 @@ sudo apt-get update
 
 - Installation du service de base de données PostgreSQL : 
 ```shell
-apt-get install postgresql postgresql-contrib
+sudo apt-get install postgresql postgresql-contrib
 ```
   
    - Accès a la ligne de commande de Postgres : 
 ```shell
-su - postgres
+sudo su - postgres
 psql
 ```
 
@@ -30,19 +30,20 @@ CREATE USER sonarqube WITH PASSWORD 'admin';
 CREATE DATABASE sonarqube OWNER sonarqube;
 GRANT ALL PRIVILEGES ON DATABASE sonarqube TO sonarqube;
 \q
+exit;
 ```
 
 
    - Téléchargement du package Sonarqube, qui est déplacé dans l'annuaire OPT.
 ```bash
-mkdir /downloads/sonarqube -p
+sudo mkdir /downloads/sonarqube -p
 cd /downloads/sonarqube
-wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.9.1.zip
-unzip sonarqube-7.9.1.zip
-mv sonarqube-7.9.1 /opt/sonarqube
+sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.9.1.zip
+sudo unzip sonarqube-7.9.1.zip
+sudo mv sonarqube-7.9.1 /opt/sonarqube
 ```
 
-   - Création d'un compte linux sonarqube
+   - Création de l'utilisateur unix sonarqube
 ```shell
 sudo adduser --system --no-create-home --group --disabled-login sonarqube
 sudo chown -R sonarqube:sonarqube /opt/sonarqube
