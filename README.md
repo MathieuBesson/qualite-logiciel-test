@@ -26,7 +26,7 @@ Lié au première objectif le deuxième est de créer un site web simple contena
 - Les technologies utilisées sont les suivantes :
   - [Nginx](https://www.nginx.com/) pour le serveur web
   - [MariaDB](https://mariadb.com/fr/) pour le serveur de base de donnée
-  - Le langage ... pour la partie back-end
+  - Le framework Symfony pour la partie back-end
   - Le langage [Javascript](https://developer.mozilla.org/fr/docs/Web/JavaScript) pour les contrôles côté front-end
 
 L'objectif principal final étant qu'à chaque commit sur le dépôt Github d'un des membres de l'équipe de développement Jenkins déclenche le lancement des tests ainsi que le contrôle de qualité de code par SonarQube.
