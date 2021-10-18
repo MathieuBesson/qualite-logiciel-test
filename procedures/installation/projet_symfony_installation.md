@@ -6,7 +6,7 @@
 cd /var/www/sites/test-qualite
 ```
 
-// Lancer l'instalation des dépendances du projet
+// Lancer l'installation des dépendances du projet
 
 ```shell
 composer install -y

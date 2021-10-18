@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "liens_ressources.md",
+            "file": "installation/projet_symfony_installation.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "liens_ressources.md",
+                "file": "installation/projet_symfony_installation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,11 +88,11 @@
   },
   "active": "b3f565d639547373",
   "lastOpenFiles": [
+    "installation/projet_symfony_installation.md",
     "liens_ressources.md",
     "installation/sonarqube_installation.md",
     "Untitled.md",
     "installation/jenkins_installation.md",
-    "installation/projet_symfony_installation.md",
     "configuration/jenkins_configuration.md",
     "configuration/jenkins_acces_depuis_VM.md",
     "installation/installations_mineurs.md",
