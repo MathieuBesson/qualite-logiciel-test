@@ -1,1 +1,0 @@
-{"virtualbox":{"source":{"owner":"www-data","group":"www-data","id":"source","mount_options":["dmode=777","fmode=777","uid=33","gid=33"],"guestpath":"/var/www","hostpath":"/home/mathieu/VM/test-qualite/donnee","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/mathieu/VM/test-qualite","disabled":false,"__vagrantfile":true}}}
