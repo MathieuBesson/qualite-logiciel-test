@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "configuration/sonarqube_configuration.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -89,12 +89,12 @@
   "active": "8310bc05021cda47",
   "lastOpenFiles": [
     "configuration/sonarqube_configuration.md",
+    "configuration/jenkins_acces_depuis_VM.md",
     "configuration/jenkins_configuration.md",
     "installation/jenkins_installation.md",
     "installation/installations_mineurs.md",
     "installation/sonarqube_installation.md",
     "liens_ressources.md",
-    "configuration/jenkins_acces_depuis_VM.md",
     "installation/projet_symfony_installation.md",
     "Untitled.md",
     "installations_mineurs.md"

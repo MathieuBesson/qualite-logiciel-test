@@ -45,9 +45,9 @@ socketxp login "your_token"
 
 ![[socketXP-authentification.png]]
 
--  Création du tunnel sécurisé  pour binder l'url https://xxxxxxx.socketxp.com sur -> http://127.0.0.1:8081
+-  Création du tunnel sécurisé  pour binder l'url https://xxxxxxx.socketxp.com sur -> http://192.168.88.188:8080
 ```shell
-socketxp connect http://127.0.0.1:8081
+sudo socketxp connect http://192.168.88.188:8080
 
 # Output: 
 Connected to SocketXP Cloud Gateway.  
