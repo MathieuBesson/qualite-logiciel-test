@@ -62,7 +62,7 @@ Password : admin
 
 - Dans l'onglet "Available", rechercher "SonarQube Scanner For Jenkins" et installer le plugin
 
-- Une fois installé, redémarrer Jenkins.
+- Une fois installé, redémarrer Jenkins. 
 
 # Paramètrage de Sonarqube dans Jenkins
 
