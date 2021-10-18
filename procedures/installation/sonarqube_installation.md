@@ -72,16 +72,22 @@ sonar.jdbc.url=jdbc:postgresql://localhost/sonarqube
 sonar.web.javaAdditionalOpts=-server
 sonar.web.host=0.0.0.0
 ```
-
+   - Augmenter la capacite d'execution des scipts 
+```shell
+sudo sysctl -w vm.max_map_count=400000
+sudo sysctl -w fs.file-max=120000
+ulimit -n 120000
+ulimit -u 8200
+```
    - Création d'un fichier de configuration 99-sonarqube.conf
 ```shell
-sudo vi /etc/security/limits.d/99-sonarqube.conf
+sudo nano /etc/security/limits.conf
 ```
 
-   - Contenu du fichier 99-sonarqube.conf
+   - Contenu du fichier limits.conf
 ```shell
-sonarqube   -   nofile   65536
-sonarqube   -   nproc    4096
+sonarqube   -   nofile   120000
+sonarqube   -   nproc    8200
 ```
 
    - Modification du fichier sysctl.conf
@@ -91,8 +97,8 @@ sudo vi /etc/sysctl.conf
 
    - Ajout de lignes a la fin du fichier sysctl.conf
 ```shell
-vm.max_map_count=262144
-fs.file-max=65536
+vm.max_map_count=400000
+fs.file-max=120000
 ```
 
    - Redémarrage de la machine virtuelle pour appliquer les changements
@@ -104,8 +110,6 @@ reboot
 ```shell
 /opt/sonarqube/bin/linux-x86-64/sonar.sh start
 ```
-
-
 
 		
 ## Accès a l'interface Web
@@ -121,3 +125,16 @@ Password : admin
 
 
 
+
+
+
+ sudo sysctl -w vm.max_map_count=524288
+  sudo sysctl -w fs.file-max=131072
+  ulimit -n 131072
+  ulimit -u 8192
+  
+  
+```
+sonarqube   -   nofile   131072
+sonarqube   -   nproc    8192
+```

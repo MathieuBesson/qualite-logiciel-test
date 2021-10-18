@@ -4,14 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b3f565d639547373",
+        "id": "51dee957fd8f4c57",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "installation/projet_symfony_installation.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -68,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "installation/projet_symfony_installation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +82,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b3f565d639547373",
+  "active": "51dee957fd8f4c57",
   "lastOpenFiles": [
-    "installation/projet_symfony_installation.md",
-    "liens_ressources.md",
-    "installation/sonarqube_installation.md",
-    "Untitled.md",
-    "installation/jenkins_installation.md",
+    "configuration/sonarqube_configuration.md",
     "configuration/jenkins_configuration.md",
     "configuration/jenkins_acces_depuis_VM.md",
+    "installation/jenkins_installation.md",
+    "installation/sonarqube_installation.md",
+    "installation/projet_symfony_installation.md",
+    "liens_ressources.md",
+    "Untitled.md",
     "installation/installations_mineurs.md",
-    "installations_mineurs.md",
-    "jenkins_installation.md"
+    "installations_mineurs.md"
   ]
 }
