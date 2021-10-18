@@ -18,6 +18,12 @@ composer install -y
 php bin/console doctrine:database:create -y
 ```
 
+// Lancer les migrations 
+
+```shell
+ php bin/console doctrine:migrations:migrate
+```
+
 // Lancer la création des fixtures
 
 ```shell
