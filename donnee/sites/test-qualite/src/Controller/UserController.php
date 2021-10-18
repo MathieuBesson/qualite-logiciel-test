@@ -46,14 +46,16 @@ class UserController extends AbstractController
                 // Connexion or reject
                 if ($userFound === null) {
                     $this->addFlash('error', 'Mot de passe incorrect');
-                    return $this->redirectToRoute('authentication');
+                    $redirection = $this->redirectToRoute('authentication');
                 } else {
                     $session->set('username', $userFound->getUsername());
                     $session->set('state', 'connected');
 
                     $this->addFlash('success', 'Authentification réussite !');
-                    return $this->redirectToRoute('reveal');
+                    $redirection = $this->redirectToRoute('reveal');
                 }
+                
+                return $redirection;
             } else {
                 return $this->render('user/index.html.twig', [
                     'form' => $form->createView(),
