@@ -15,7 +15,6 @@ Password : admin
 
 - Une fois installé, redémarrer Jenkins.
  
- 
 
 # Configurer Jenkins pour utiliser Sonarqube
 
