@@ -62,7 +62,7 @@ sudo ufw status
    - Aller à l'adresse suivante pour utiliser Jenkins  : 
 ```shell
 http://your_server_ip_or_domain:8080
-## 127.0.0.1:8080 ou localhost:8080
+## 192.168.88.188:8080
 ```
 		
    - Récupérer le mot de passe admin généré par Jenkins : 

@@ -206,7 +206,7 @@ sudo service nginx restart
 nginx -t
 ```
 
-- Test sur le naviguateur (après détournemennt de DNS dans virtual box 127.0.0.1:8080 -> 10.0.2.15:80) : [127.0.0.1:8080](127.0.0.1:8080)
+- Test sur le naviguateur : [192.168.88.188](192.168.88.188)
 
 ## Installation de Mariadb
 
@@ -240,6 +240,3 @@ sudo mariadb
 ```sql
 GRANT ALL ON *.* TO 'admin'@'localhost' IDENTIFIED BY 'admin' WITH GRANT OPTION;
 ```
-
-
-## Installer PHPUnit

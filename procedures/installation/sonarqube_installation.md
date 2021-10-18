@@ -127,14 +127,16 @@ Password : admin
 
 
 
+En cas de problème de mémoire lors de l'execution du script sonar.sh 
 
- sudo sysctl -w vm.max_map_count=524288
-  sudo sysctl -w fs.file-max=131072
-  ulimit -n 131072
-  ulimit -u 8192
-  
-  
+```shell
+sudo sysctl -w vm.max_map_count=524288
+sudo sysctl -w fs.file-max=131072
+ulimit -n 131072
+ulimit -u 8192
 ```
+
+```shell
 sonarqube   -   nofile   131072
 sonarqube   -   nproc    8192
 ```
