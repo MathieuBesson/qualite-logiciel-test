@@ -14,6 +14,17 @@ Password : admin
 
 - Une fois installé, redémarrer Jenkins.
 
+# Paramètrage de Sonarqube
+
+- Sur Jenkins, aller dans "Manage Jenkins" et dans "Configure System"
+
+- Dans l'onglet SonarQube Server, appuyer sur le bouton "Add Sonarqube"
+
+- Renseignez un nom, l'adresse de SonarQube (Par défaut http://localhost:9000)
+
+- Créez un nouveau token Jenkins, choissisez l'option "Secret Text" et insérez le token dans "Secret".
+
+
 # Paramètrage de Sonarqube Scanner
 
 - Sur Jenkins, aller dans le projet et dans le menu "Configure"
