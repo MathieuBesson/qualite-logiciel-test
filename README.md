@@ -63,6 +63,7 @@ vagrant up
 NB : 
 - Il est possible de visualiser les images en ouvrant le dossier avec l'éditeur de Markdown [Obsidian](https://obsidian.md/) (avec le plugin comunautaire -> Ozan's Image in Editor Plugin)
 - Le code source du projet de connexion est disponible ici : /donnee/sites/test-qualite/
+- Il n'est pour le moment pas possible de lancer l'installation automatique de SonarQueb à l'aide de Vagrant, suivre les indications de /procedures/installation/sonarqube_installation
 
 
 ### Les contributeurs
