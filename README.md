@@ -60,7 +60,10 @@ vagrant up
 -   **#3** Configuration de Jenkins pour le lancement de test automatisés -> jenkins_configuration
 -   **#4** Configuration de SonarQube pour le lancement du scan du code -> sonarqube_configuration
 
-NB : Il est possible de visualiser les images en ouvrant le dossier avec l'éditeur de Markdown [Obsidian](https://obsidian.md/) (avec le plugin comunautaire -> Ozan's Image in Editor Plugin)
+NB : 
+- Il est possible de visualiser les images en ouvrant le dossier avec l'éditeur de Markdown [Obsidian](https://obsidian.md/) (avec le plugin comunautaire -> Ozan's Image in Editor Plugin)
+- Le code source du projet de connexion est disponible ici : /donnee/sites/test-qualite/
+
 
 ### Les contributeurs
 

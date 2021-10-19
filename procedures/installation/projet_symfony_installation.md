@@ -11,7 +11,7 @@ cd /var/www/sites/test-qualite
 - Lancer l'installation des dépendances du projet
 
 ```shell
-composer install -y
+composer install
 ```
 
 - Lancer la création de la bdd
@@ -29,7 +29,7 @@ php bin/console doctrine:database:create
 - Lancer la création des fixtures
 
 ```shell
-php bin/console doctrine:fixtures:load -y
+php bin/console doctrine:fixtures:load
 ```
 
 Rendez vous ici pour découvrir le projet : 
