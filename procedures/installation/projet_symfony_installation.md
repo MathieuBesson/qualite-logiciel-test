@@ -7,7 +7,7 @@ Pour accèder au projet Symfony lancer les commandes suivantes
 ```shell
 cd /var/www/sites/test-qualite
 ```
-
+ 
 - Lancer l'installation des dépendances du projet
 
 ```shell
