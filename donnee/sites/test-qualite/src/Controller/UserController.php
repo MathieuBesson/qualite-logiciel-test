@@ -55,7 +55,7 @@ class UserController extends AbstractController
                     $redirection = $this->redirectToRoute('reveal');
                 }
                 
-                return $redirection;
+                return $redirection; 
             } else {
                 return $this->render('user/index.html.twig', [
                     'form' => $form->createView(),
