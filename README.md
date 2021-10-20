@@ -14,6 +14,8 @@ L'objectif est de créer une pipeline d'intégration continue (CI/CD) à l'aide 
 -   [SonarQube](https://www.sonarqube.org/) logiciel de contrôle de qualité et de sécurité du code (Normes de style/codage)
 -   [Github](https://github.com) plateforme en ligne permettant l'hébergement et le versionning du code source produit
 
+Un shéma explicatif est disponible ici : /procedures/images/shema-explicatif
+
 ### Objectif 2 : Création d'un mini site web (connexion) et des test associés
 
 Lié au première objectif le deuxième est de créer un site web simple contenant :
